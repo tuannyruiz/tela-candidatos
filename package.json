@@ -1,0 +1,21 @@
+{
+  "name": "revelo-front-end-test",
+  "version": "1.0.0",
+  "description": "Revelo's Front-End Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server index.js"
+  },
+  "keywords": [
+    "revelo",
+    "test",
+    "front"
+  ],
+  "author": "Revelo Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "json-server": "0.12.1",
+    "faker": "4.1.0"
+  }
+}
