@@ -1,6 +1,7 @@
 :root {
   --light-gray: #E5E5E5; 
   --dark-blue: #242E42; 
+  --red: #FF2B1A;
 }
 
 .card {
@@ -25,7 +26,17 @@
 }
 
 .candidate {
+  display: inline-block;
   font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.new {
+  border: 1px solid var(--red);
+  border-radius: 20px;
+  color: var(--red);
+  display: inline-block;
+  padding: 3px 12px;
 }
 
 .occupation {
