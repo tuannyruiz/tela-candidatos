@@ -8,7 +8,7 @@
   color: var(--dark-blue);
   border: 1px solid var(--light-gray);
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 15px; 
@@ -45,10 +45,19 @@
   padding-left: 0;
 }
 
+.info li {
+  margin-bottom: 10px;
+}
+
+.info li img {
+  margin-right: 5px;
+}
+
 button {
   align-self: start;
   border: 1px solid var(--light-gray);
   background: none;
+  padding: 15px;
 }
 
 button.favorite {
