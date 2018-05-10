@@ -1,8 +1,10 @@
 :root {
-  --light-gray: #E5E5E5; 
+  --light-gray: #E9E9E9; 
   --dark-blue: #242E42; 
   --red: #FF2B1A;
 }
+
+
 
 .card {
   font-family: Roboto;
@@ -62,6 +64,16 @@
 
 .info li img {
   margin-right: 5px;
+}
+
+.skill {
+  background: #F1F1F4;
+  border: 1px solid var(--light-gray);
+  border-radius: 20px;
+  color: var(--dark-blue);
+  display: inline-block;
+  margin-right: 5px;
+  padding: 3px 12px;
 }
 
 button {
