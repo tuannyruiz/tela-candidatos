@@ -4,13 +4,13 @@
   --red: #FF2B1A;
 }
 
-
+body {
+  font-family: 'Lato';
+}
 
 .card {
-  font-family: Roboto;
   color: var(--dark-blue);
   border: 1px solid var(--light-gray);
-  width: 60%;
   margin: 0 auto 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
