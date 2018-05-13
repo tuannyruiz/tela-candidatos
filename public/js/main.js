@@ -9,7 +9,7 @@ function newCandidate(person) {
   } else {
     return '';
   }
-}
+};
 
 function placesToWork(person) {
   var citiesLen = person.cities.length;
@@ -24,7 +24,7 @@ function placesToWork(person) {
       return '<span class="city">' + person.cities[0] + ', ' + person.cities[1] + ' e mais <span class="more-cities">' + (citiesLen - 2) + ' cidades</span>.</span>';
       break;
   }
-}
+};
 
 function candidateSkills(person) {
   var list = '';
@@ -32,12 +32,11 @@ function candidateSkills(person) {
     list += '<span class="skill">' + person.mainSkills[i] + '</span>';
   }
   return list;
-}
+};
 
 function createCard(person) {
-  return '<img src="' + person.imageUrl + '" class="photo"><div class="profile"><h1 class="candidate">' + person.name +'</h1>' + newCandidate(person) + '<h2 class="occupation">' + person.career + '</h2><ul class="info"><li class="experiences"><img src="images/work-icn.svg" alt="Ícone que representa experiências profissionais">' + person.lastCompanies +'</li><li class="university"><img src="images/study-icn.svg" alt="Ícone que representa univeridade">' + person.university + '</li><li class="local"><img src="images/location-icn.svg" alt="Ícone que representa a localização"> Disposto a trabalhar em: ' + placesToWork(person) + '</li><li class="skills"><img src="images/skills-icn.svg" alt="Ícone que representa habilidades"> Principais habilidades: ' + candidateSkills(person) + '</li></ul></div><button class="favorite"><img src="images/star.svg" alt=""></button><button class="more"><img src="images/dots.svg" alt=""></button>';
-  
-}
+  return '<img src="' + person.imageUrl + '" class="photo"><div class="profile"><h1 class="candidate">' + person.name +'</h1>' + newCandidate(person) + '<h2 class="occupation">' + person.career + '</h2><ul class="info"><li class="experiences"><img src="images/work-icn.svg" alt="Ícone que representa experiências profissionais">' + person.lastCompanies +'</li><li class="university"><img src="images/study-icn.svg" alt="Ícone que representa univeridade">' + person.university + '</li><li class="local"><img src="images/location-icn.svg" alt="Ícone que representa a localização"> Disposto a trabalhar em: ' + placesToWork(person) + '</li><li class="skills"><img src="images/skills-icn.svg" alt="Ícone que representa habilidades"> Principais habilidades: ' + candidateSkills(person) + '</li></ul></div><button class="favorite" id="favorite"><img src="images/star.svg" alt=""></button><button class="more" id="more"><img src="images/dots.svg" alt=""><div class="remove" id="remove">Remover</div></button>';
+};
 
 var request = new XMLHttpRequest();
 request.open('GET', 'http://localhost:3000/candidates', true);
@@ -55,6 +54,5 @@ request.onload = function () {
   } else {
     console.log('error');
   }
-}
-
+};
 request.send();

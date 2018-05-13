@@ -94,7 +94,9 @@ button {
   align-self: start;
   border: 1px solid var(--light-gray);
   background: none;
+  height: 51px;
   padding: 15px;
+  position: relative;
 }
 
 button.favorite {
@@ -112,6 +114,20 @@ button.more {
 button.more:focus {
   background: #F8F9F9;
   outline-width: 1px;
+}
+
+.remove {
+  border: 1px solid var(--light-gray);
+  background: var(--gray);
+  color: var(--dark-blue);
+  display: none;
+  font-weight: 700;
+  padding: 15px 10px 15px 30px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 100%;
+  width: 200px;
 }
 
 @media (min-width: 576px) {
