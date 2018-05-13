@@ -63,14 +63,3 @@ request.onload = function () {
   }
 };
 request.send();
-
-var mais = document.getElementsByClassName("more");
-var remove = document.getElementsByClassName("remove");
-window.onload=function() {
-
-  // for(var i = 0; i < mais.length; i++) {  
-    mais[0].addEventListener("click", function() {
-      remove[0].style.display = "block";
-    })
-  // }
-}
