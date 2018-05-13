@@ -43,6 +43,12 @@ request.open('GET', 'http://localhost:3000/candidates', true);
 request.onload = function () {
 
   var data = JSON.parse(this.response);
+  data.sort(function(a, b) {
+    a = a.name.toLowerCase();
+    b = b.name.toLowerCase();
+
+    return a < b ? -1 : a > b ? 1 : 0;
+  });
 
   if (request.status >= 200 && request.status < 400) {
     data.forEach(person => {
