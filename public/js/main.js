@@ -21,7 +21,8 @@ function placesToWork(person) {
       return '<span class="city">' + person.cities[0] + ' e ' + person.cities[1] + '</span>';
       break;
     default:
-      return '<span class="city">' + person.cities[0] + ', ' + person.cities[1] + ' e mais <span class="more-cities">' + (citiesLen - 2) + ' cidades</span>.</span>';
+      var plural = (citiesLen - 2 == 1) ? 'cidade' : 'cidades';
+      return '<span class="city">' + person.cities[0] + ', ' + person.cities[1] + ' e mais <span class="more-cities">' + (citiesLen - 2) + ' ' + plural +'</span>.</span>';
       break;
   }
 };
@@ -72,6 +73,4 @@ window.onload=function() {
       remove[0].style.display = "block";
     })
   // }
-  
-  
 }
