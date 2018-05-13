@@ -117,17 +117,18 @@ button.more:focus {
 }
 
 .remove {
-  border: 1px solid var(--light-gray);
-  background: var(--gray);
+  border: 1px solid var(--gray);
+  background: var(--light-gray);
   color: var(--dark-blue);
+  cursor: pointer;
   display: none;
   font-weight: 700;
   padding: 15px 10px 15px 30px;
   position: absolute;
-  right: 0;
+  right: -1px;
   text-align: left;
   top: 100%;
-  width: 200px;
+  width: 74px;
 }
 
 @media (min-width: 576px) {
@@ -140,6 +141,16 @@ button.more:focus {
   .profile {
     grid-column: 4 / 11;
     grid-row: 1 / 2;
+  }
+
+  .remove {
+    width: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .remove {
+    width: 200px;
   }
 }
 
