@@ -57,13 +57,3 @@ Baixe o repositorio e rode os comandos a seguir e o servidor estará rodando em
 npm install
 npm start
 ```
-
-## Via docker
-
-Baixe o repositorio e rode os comandos a seguir e o servidor estará rodando em
-`http://localhost:3000`
-
-```
-docker build --no-cache -t frontend:test .
-docker run -p 3000:3000 frontend:test
-```
